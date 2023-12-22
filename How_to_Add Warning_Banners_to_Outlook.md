@@ -4,11 +4,11 @@
 ### If this is your first time running the script from this specific computer
 1. open windows powershell as administrator by searching for it in the windows search menu and selecting "Run as administrator"
 
-2. in powershell, enter <span style="color:blue"> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser </span>this allows us to run scripts that we have created locally, but scripts that we download must be digitally signed by a trusted publisher. This only needs to be done once per computer and if you do not do this step you will eventually recieve the error *"Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files."*
-3. Next, in the powershell after selecting "run as administrator" we need to Install the Exchange Online V3 Module in PowerShell using the following <span style="color:blue">Install-Module -Name PowerShellGet -Force</span> after this is done, close and re-open your powershell and run as administrator
-4. next use the following to install the EXO V3 module <span style="color:blue">Install-Module -Name ExchangeOnlineManagement -Force</span>
+2. in powershell, enter <span style="color:blue"> "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser" </span>this allows us to run scripts that we have created locally, but scripts that we download must be digitally signed by a trusted publisher. This only needs to be done once per computer and if you do not do this step you will eventually recieve the error *"Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files."*
+3. Next, in the powershell after selecting "run as administrator" we need to Install the Exchange Online V3 Module in PowerShell using the following <span style="color:blue">"Install-Module -Name PowerShellGet -Force"</span> after this is done, close and re-open your powershell and run as administrator
+4. next use the following to install the EXO V3 module <span style="color:blue">"Install-Module -Name ExchangeOnlineManagement -Force"</span>
 5. Next enable external tagging in exchange online with "<span style="color:blue">Set-ExternalInOutlook -Enabled $true</span>"
-5. Verify external tagging is enabled with "<span style="color:blue">Get-ExternalInOutlook</span>" the output should look like this:
+6. Verify external tagging is enabled with "<span style="color:blue">Get-ExternalInOutlook</span>" the output should look like this:
 ---
 RunspaceId : 4b07eecc-34c5-4add-8ee4-80d25aa4aff4
 
